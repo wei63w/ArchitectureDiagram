@@ -70,22 +70,22 @@
           <mxGeometry height="60" width="40" x="60" y="10" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-29" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="480" width="561" x="119" y="80" as="geometry" />
+          <mxGeometry height="480" width="531" x="120" y="80" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-25" edge="1" parent="YHvP0lc_QxsPNzx7v6_R-29" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="1" />
-              <mxPoint x="561" />
+              <mxPoint x="0.946524064171123" />
+              <mxPoint x="531" />
             </Array>
-            <mxPoint x="1" y="480" as="sourcePoint" />
-            <mxPoint x="561" y="480" as="targetPoint" />
+            <mxPoint x="0.946524064171123" y="480" as="sourcePoint" />
+            <mxPoint x="531" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-28" edge="1" parent="YHvP0lc_QxsPNzx7v6_R-29" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint y="480" as="sourcePoint" />
-            <mxPoint x="561" y="480" as="targetPoint" />
+            <mxPoint x="531" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
