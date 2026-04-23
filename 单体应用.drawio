@@ -92,31 +92,34 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="用户&lt;div&gt;PC/移动端/Web&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="120" x="327.5" y="-220" as="geometry" />
+          <mxGeometry height="50" width="120" x="320" y="-220" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-39" edge="1" parent="1" source="YHvP0lc_QxsPNzx7v6_R-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="YHvP0lc_QxsPNzx7v6_R-32">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Nginx代理层" vertex="1">
-          <mxGeometry height="60" width="120" x="327.5" y="-320" as="geometry" />
+          <mxGeometry height="60" width="120" x="320" y="-310" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=top;" value="server" vertex="1">
-          <mxGeometry height="250" width="285" x="245" y="-600" as="geometry" />
+          <mxGeometry height="250" width="285" x="237.5" y="-584" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="B2B" vertex="1">
-          <mxGeometry height="40" width="77.5" x="250" y="-410" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-40" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="190" width="262.5" x="250" y="-560" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="B2C" vertex="1">
-          <mxGeometry height="40" width="77.5" x="346.75" y="-410" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-33" parent="YHvP0lc_QxsPNzx7v6_R-40" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="B2B" vertex="1">
+          <mxGeometry height="40" width="77.5" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="C2C" vertex="1">
-          <mxGeometry height="40" width="70" x="440" y="-410" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-34" parent="YHvP0lc_QxsPNzx7v6_R-40" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="B2C" vertex="1">
+          <mxGeometry height="40" width="77.5" x="96.75" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-36" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="缓存&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="260" x="250" y="-490" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-35" parent="YHvP0lc_QxsPNzx7v6_R-40" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="C2C" vertex="1">
+          <mxGeometry height="40" width="70" x="190" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-37" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="缓存&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="260" x="252.5" y="-560" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-36" parent="YHvP0lc_QxsPNzx7v6_R-40" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="缓存&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="260" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-37" parent="YHvP0lc_QxsPNzx7v6_R-40" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="缓存&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="260" x="2.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
