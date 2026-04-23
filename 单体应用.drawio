@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="kq2nJmVbW224nY02i_fF">
+    <mxGraphModel dx="1534" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OWBEzaLXfOuf5ILnln79-8" edge="1" parent="1" source="OWBEzaLXfOuf5ILnln79-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="OWBEzaLXfOuf5ILnln79-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="用户&lt;div&gt;PC/移动端/Web&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-9" edge="1" parent="1" source="OWBEzaLXfOuf5ILnln79-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="OWBEzaLXfOuf5ILnln79-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Nginx反向代理" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="单体应用" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-6" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="缓存&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="100" x="180" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-7" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="数据库" vertex="1">
+          <mxGeometry height="80" width="100" x="410" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-10" edge="1" parent="1" source="OWBEzaLXfOuf5ILnln79-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="OWBEzaLXfOuf5ILnln79-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OWBEzaLXfOuf5ILnln79-11" edge="1" parent="1" source="OWBEzaLXfOuf5ILnln79-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="OWBEzaLXfOuf5ILnln79-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
