@@ -69,6 +69,25 @@
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-16" parent="YHvP0lc_QxsPNzx7v6_R-12" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="数据库" vertex="1">
           <mxGeometry height="60" width="40" x="60" y="10" as="geometry" />
         </mxCell>
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-29" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="480" width="561" x="119" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-25" edge="1" parent="YHvP0lc_QxsPNzx7v6_R-29" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1" />
+              <mxPoint x="561" />
+            </Array>
+            <mxPoint x="1" y="480" as="sourcePoint" />
+            <mxPoint x="561" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-28" edge="1" parent="YHvP0lc_QxsPNzx7v6_R-29" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint y="480" as="sourcePoint" />
+            <mxPoint x="561" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
