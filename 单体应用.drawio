@@ -18,7 +18,7 @@
         <mxCell id="OWBEzaLXfOuf5ILnln79-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Nginx代理层" vertex="1">
           <mxGeometry height="60" width="120" x="320" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-21" connectable="0" parent="1" style="group" value="" vertex="1">
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-21" connectable="0" parent="1" style="group;verticalAlign=top;" value="" vertex="1">
           <mxGeometry height="180" width="450" x="160" y="110" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-1" parent="YHvP0lc_QxsPNzx7v6_R-21" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="应用层" vertex="1">
@@ -27,8 +27,8 @@
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-6" connectable="0" parent="YHvP0lc_QxsPNzx7v6_R-21" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
           <mxGeometry height="140" width="110" x="30" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-2" parent="YHvP0lc_QxsPNzx7v6_R-6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
-          <mxGeometry height="140" width="110" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-2" parent="YHvP0lc_QxsPNzx7v6_R-6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;" value="server" vertex="1">
+          <mxGeometry height="160" width="110" y="-20" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-3" parent="YHvP0lc_QxsPNzx7v6_R-6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="B2B" vertex="1">
           <mxGeometry height="40" width="77.5" x="16.25" y="90" as="geometry" />
@@ -42,8 +42,8 @@
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-7" connectable="0" parent="YHvP0lc_QxsPNzx7v6_R-21" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
           <mxGeometry height="140" width="110" x="160" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-8" parent="YHvP0lc_QxsPNzx7v6_R-7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
-          <mxGeometry height="140" width="110" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-8" parent="YHvP0lc_QxsPNzx7v6_R-7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;" value="server" vertex="1">
+          <mxGeometry height="160" width="110" y="-20" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-9" parent="YHvP0lc_QxsPNzx7v6_R-7" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="B2C" vertex="1">
           <mxGeometry height="40" width="77.5" x="16.25" y="90" as="geometry" />
@@ -57,8 +57,8 @@
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-12" connectable="0" parent="YHvP0lc_QxsPNzx7v6_R-21" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
           <mxGeometry height="140" width="110" x="300" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-13" parent="YHvP0lc_QxsPNzx7v6_R-12" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
-          <mxGeometry height="140" width="110" as="geometry" />
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-13" parent="YHvP0lc_QxsPNzx7v6_R-12" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;" value="server" vertex="1">
+          <mxGeometry height="160" width="110" y="-20" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-14" parent="YHvP0lc_QxsPNzx7v6_R-12" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="C2C" vertex="1">
           <mxGeometry height="40" width="77.5" x="16.25" y="90" as="geometry" />
@@ -100,7 +100,7 @@
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Nginx代理层" vertex="1">
           <mxGeometry height="60" width="120" x="320" y="-310" as="geometry" />
         </mxCell>
-        <mxCell id="YHvP0lc_QxsPNzx7v6_R-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=top;" value="server" vertex="1">
+        <mxCell id="YHvP0lc_QxsPNzx7v6_R-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=center;verticalAlign=top;" value="&lt;font&gt;server&lt;/font&gt;" vertex="1">
           <mxGeometry height="250" width="285" x="237.5" y="-584" as="geometry" />
         </mxCell>
         <mxCell id="YHvP0lc_QxsPNzx7v6_R-40" connectable="0" parent="1" style="group" value="" vertex="1">
