@@ -1,0 +1,206 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram name="Java 微服务架构图" id="java-microservice-architecture">
+    <mxGraphModel dx="1615" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#172B4D;" value="Java 微服务架构图：从服务部署到请求落库" vertex="1">
+          <mxGeometry height="40" width="760" x="420" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="deployBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="服务部署与运行环境" vertex="1">
+          <mxGeometry height="360" width="260" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="git" parent="deployBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#4C9AFF;fontColor=#172B4D;" value="代码仓库&lt;br&gt;Git / GitLab" vertex="1">
+          <mxGeometry height="55" width="180" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cicd" parent="deployBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#4C9AFF;fontColor=#172B4D;" value="CI/CD&lt;br&gt;Jenkins / GitLab CI" vertex="1">
+          <mxGeometry height="55" width="180" x="40" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="docker" parent="deployBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#4C9AFF;fontColor=#172B4D;" value="镜像构建&lt;br&gt;Docker / Harbor" vertex="1">
+          <mxGeometry height="55" width="180" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="k8s" parent="deployBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DEEBFF;strokeColor=#4C9AFF;fontColor=#172B4D;" value="服务部署&lt;br&gt;Kubernetes / Docker Compose" vertex="1">
+          <mxGeometry height="60" width="180" x="40" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="trafficBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="请求入口层" vertex="1">
+          <mxGeometry height="150" width="900" x="340" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="trafficBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3FCEF;strokeColor=#36B37E;fontColor=#172B4D;" value="用户 / Web / App" vertex="1">
+          <mxGeometry height="50" width="130" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dns" parent="trafficBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3FCEF;strokeColor=#36B37E;fontColor=#172B4D;" value="DNS / CDN" vertex="1">
+          <mxGeometry height="50" width="130" x="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nginx" parent="trafficBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3FCEF;strokeColor=#36B37E;fontColor=#172B4D;" value="Nginx / SLB&lt;br&gt;负载均衡" vertex="1">
+          <mxGeometry height="50" width="140" x="370" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" parent="trafficBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3FCEF;strokeColor=#36B37E;fontColor=#172B4D;fontStyle=1;" value="API 网关&lt;br&gt;Spring Cloud Gateway" vertex="1">
+          <mxGeometry height="60" width="150" x="560" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="security" parent="trafficBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3FCEF;strokeColor=#36B37E;fontColor=#172B4D;" value="安全认证 / 限流&lt;br&gt;JWT / OAuth2 / Sentinel" vertex="1">
+          <mxGeometry height="60" width="130" x="750" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="governanceBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="服务治理中心" vertex="1">
+          <mxGeometry height="300" width="300" x="1260" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="registry" parent="governanceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0B3;strokeColor=#FFAB00;fontColor=#172B4D;" value="服务注册与发现&lt;br&gt;Nacos / Eureka / Consul" vertex="1">
+          <mxGeometry height="60" width="210" x="45" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="config" parent="governanceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0B3;strokeColor=#FFAB00;fontColor=#172B4D;" value="配置中心&lt;br&gt;Nacos Config / Apollo" vertex="1">
+          <mxGeometry height="60" width="210" x="45" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="bus" parent="governanceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0B3;strokeColor=#FFAB00;fontColor=#172B4D;" value="消息总线&lt;br&gt;Spring Cloud Bus" vertex="1">
+          <mxGeometry height="55" width="210" x="45" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="serviceBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="业务服务层" vertex="1">
+          <mxGeometry height="280" width="900" x="340" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="userSvc" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAE6FF;strokeColor=#6554C0;fontColor=#172B4D;" value="用户服务&lt;br&gt;User Service" vertex="1">
+          <mxGeometry height="60" width="140" x="35" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="orderSvc" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAE6FF;strokeColor=#6554C0;fontColor=#172B4D;fontStyle=1;" value="订单服务&lt;br&gt;Order Service" vertex="1">
+          <mxGeometry height="60" width="140" x="210" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="productSvc" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAE6FF;strokeColor=#6554C0;fontColor=#172B4D;" value="商品服务&lt;br&gt;Product Service" vertex="1">
+          <mxGeometry height="60" width="140" x="385" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="stockSvc" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAE6FF;strokeColor=#6554C0;fontColor=#172B4D;" value="库存服务&lt;br&gt;Stock Service" vertex="1">
+          <mxGeometry height="60" width="140" x="560" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="paySvc" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAE6FF;strokeColor=#6554C0;fontColor=#172B4D;" value="支付服务&lt;br&gt;Pay Service" vertex="1">
+          <mxGeometry height="60" width="130" x="735" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="feign" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBE6;strokeColor=#FF5630;fontColor=#172B4D;" value="远程调用&lt;br&gt;OpenFeign + LoadBalancer" vertex="1">
+          <mxGeometry height="60" width="180" x="240" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="breaker" parent="serviceBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBE6;strokeColor=#FF5630;fontColor=#172B4D;" value="熔断降级&lt;br&gt;Sentinel / Resilience4j" vertex="1">
+          <mxGeometry height="60" width="180" x="490" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="middlewareBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="中间件层" vertex="1">
+          <mxGeometry height="250" width="560" x="340" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="redis" parent="middlewareBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FCFF;strokeColor=#00B8D9;fontColor=#172B4D;" value="Redis&lt;br&gt;缓存 / 分布式锁" vertex="1">
+          <mxGeometry height="60" width="190" x="40" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="mq" parent="middlewareBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FCFF;strokeColor=#00B8D9;fontColor=#172B4D;" value="消息队列&lt;br&gt;RocketMQ / Kafka / RabbitMQ" vertex="1">
+          <mxGeometry height="60" width="210" x="310" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="es" parent="middlewareBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FCFF;strokeColor=#00B8D9;fontColor=#172B4D;" value="Elasticsearch&lt;br&gt;搜索 / 日志检索" vertex="1">
+          <mxGeometry height="60" width="190" x="40" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="seata" parent="middlewareBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FCFF;strokeColor=#00B8D9;fontColor=#172B4D;" value="分布式事务&lt;br&gt;Seata / TCC / Saga" vertex="1">
+          <mxGeometry height="60" width="210" x="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dataBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="数据层" vertex="1">
+          <mxGeometry height="250" width="300" x="940" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="mysql" parent="dataBox" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFF0B3;strokeColor=#FFAB00;fontColor=#172B4D;" value="MySQL&lt;br&gt;业务数据库 / 事务 / 索引" vertex="1">
+          <mxGeometry height="70" width="190" x="55" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="sharding" parent="dataBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF0B3;strokeColor=#FFAB00;fontColor=#172B4D;" value="分库分表&lt;br&gt;ShardingSphere" vertex="1">
+          <mxGeometry height="55" width="190" x="55" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="observeBox" parent="1" style="swimlane;html=1;rounded=1;whiteSpace=wrap;fillColor=#F4F5F7;strokeColor=#6B778C;fontStyle=1;fontColor=#172B4D;startSize=30;" value="可观测性与运维" vertex="1">
+          <mxGeometry height="420" width="300" x="1260" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="trace" parent="observeBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7E9;strokeColor=#BF2600;fontColor=#172B4D;" value="链路追踪&lt;br&gt;SkyWalking / Zipkin / Jaeger" vertex="1">
+          <mxGeometry height="60" width="210" x="45" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="log" parent="observeBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7E9;strokeColor=#BF2600;fontColor=#172B4D;" value="日志系统&lt;br&gt;ELK / Loki" vertex="1">
+          <mxGeometry height="60" width="210" x="45" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="monitor" parent="observeBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7E9;strokeColor=#BF2600;fontColor=#172B4D;" value="监控告警&lt;br&gt;Prometheus / Grafana" vertex="1">
+          <mxGeometry height="60" width="210" x="45" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="alert" parent="observeBox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7E9;strokeColor=#BF2600;fontColor=#172B4D;" value="告警通知&lt;br&gt;Alertmanager / 企业微信 / 钉钉" vertex="1">
+          <mxGeometry height="60" width="210" x="45" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="e_git_cicd" edge="1" parent="1" source="git" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="cicd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cicd_docker" edge="1" parent="1" source="cicd" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="docker">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_docker_k8s" edge="1" parent="1" source="docker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="k8s">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_client_dns" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="dns">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dns_nginx" edge="1" parent="1" source="dns" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="nginx">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_nginx_gateway" edge="1" parent="1" source="nginx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gateway_security" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="security">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_security_order" edge="1" parent="1" source="security" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="orderSvc">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_k8s_services" edge="1" parent="1" source="k8s" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#0052CC;fontColor=#0052CC;" target="serviceBox" value="部署服务实例">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_registry" edge="1" parent="1" source="serviceBox" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#FF8B00;fontColor=#FF8B00;" target="registry" value="启动后注册">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_config_services" edge="1" parent="1" source="config" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#FF8B00;fontColor=#FF8B00;" target="serviceBox" value="读取配置">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_gateway_registry" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#FF8B00;fontColor=#FF8B00;" target="registry" value="服务发现">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_bus_config" edge="1" parent="1" source="bus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#FF8B00;fontColor=#FF8B00;" target="config" value="配置刷新广播">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_order_feign" edge="1" parent="1" source="orderSvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="feign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_feign_breaker" edge="1" parent="1" source="feign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="breaker">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_breaker_stock" edge="1" parent="1" source="breaker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="stockSvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_breaker_pay" edge="1" parent="1" source="breaker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="paySvc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_redis" edge="1" parent="1" source="orderSvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#00A3BF;fontColor=#00A3BF;" target="redis" value="缓存 / 锁">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_mq" edge="1" parent="1" source="orderSvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#00A3BF;fontColor=#00A3BF;" target="mq" value="异步消息">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_seata" edge="1" parent="1" source="orderSvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#00A3BF;fontColor=#00A3BF;" target="seata" value="分布式事务">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_product_es" edge="1" parent="1" source="productSvc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#00A3BF;fontColor=#00A3BF;" target="es" value="搜索索引">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_mysql" edge="1" parent="1" source="serviceBox" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#FF8B00;fontColor=#FF8B00;" target="mysql" value="事务落库">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_mysql_sharding" edge="1" parent="1" source="mysql" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="sharding">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_trace" edge="1" parent="1" source="serviceBox" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#BF2600;fontColor=#BF2600;" target="trace" value="TraceId">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_log" edge="1" parent="1" source="serviceBox" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#BF2600;fontColor=#BF2600;" target="log" value="日志采集">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_services_monitor" edge="1" parent="1" source="serviceBox" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;strokeColor=#BF2600;fontColor=#BF2600;" target="monitor" value="指标监控">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_monitor_alert" edge="1" parent="1" source="monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#344563;" target="alert">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
